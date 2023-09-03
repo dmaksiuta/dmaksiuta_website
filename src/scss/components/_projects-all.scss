@@ -8,22 +8,33 @@
 	left: 0;
 	z-index: 99;
 	padding: 45px;
-	background: rgba(0,0,0,0.6);
+	background: rgba(0, 0, 0, 0.6);
+
 	&._open {
 		display: block;
 	}
+
 	&__container {
 		position: relative;
 	}
+
 	&__list {
+		padding: 0 30px;
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 		gap: 24px;
 	}
+
 	.material-icons {
 		position: absolute;
 		top: 0;
 		right: 0;
 		cursor: pointer;
+	}
+
+	.projects-item {
+		&:nth-child(even) {
+			margin-top: 0;
+		}
 	}
 }
