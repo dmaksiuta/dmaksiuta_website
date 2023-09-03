@@ -8,6 +8,7 @@
 	text-transform: uppercase;
 	transition: var(--transition);
 	background: transparent;
+	white-space: nowrap;
 
 	&._primary {
 		color: var(--c-text);

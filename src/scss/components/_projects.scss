@@ -6,6 +6,12 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 24px;
+		@include desktop-small {
+			grid-template-columns: 1fr 1fr;
+		}
+		@include tablet-small {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	.title {
@@ -23,6 +29,9 @@
 .projects-item {
 	&:nth-child(even) {
 		margin-top: -220px;
+		@include desktop-small {
+			margin-top: 0;
+		}
 	}
 
 	&__img {

@@ -5,6 +5,11 @@
 		display: flex;
 		align-items: center;
 		gap: 72px;
+		@include desktop-small {
+			padding-top: 60px;
+			padding-bottom: 60px;
+			flex-direction: column;
+		}
 	}
 
 	&__info {

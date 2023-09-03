@@ -9,6 +9,8 @@
 	z-index: 99;
 	padding: 45px;
 	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(7px);
+
 
 	&._open {
 		display: block;
@@ -26,9 +28,10 @@
 	}
 
 	.material-icons {
-		position: absolute;
+		position: sticky;
 		top: 0;
-		right: 0;
+		left: 100%;
+		transform: translateX(50px);
 		cursor: pointer;
 	}
 
