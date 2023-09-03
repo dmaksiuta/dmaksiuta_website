@@ -27,31 +27,8 @@
 		}
 	}
 
-	&__ul {
-		display: flex;
-		align-items: center;
-		gap: 24px;
-		z-index: 9;
-	}
-
-	&__a {
-		display: inline-block;
-		font: var(--font-body2);
-		color: rgba(var(--c-text-rgb), 0.7);
-		opacity: 1;
-		padding: 32px 24px;
-		transition: var(--transition);
-
-		&:hover {
-			color: rgba(var(--c-text-rgb), 1);
-			background: var(--c-primary);
-		}
-	}
-
 	&__copy {
-		border-top: 1px solid rgba(var(--c-text-rgb), 0.3);
 		color: rgba(var(--c-text-rgb), 0.3);
-		padding-top: 30px;
 		text-align: center;
 	}
 }
