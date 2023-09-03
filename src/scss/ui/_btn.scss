@@ -7,6 +7,7 @@
 	font: var(--font-button);
 	text-transform: uppercase;
 	transition: var(--transition);
+	background: transparent;
 
 	&._primary {
 		color: var(--c-text);
