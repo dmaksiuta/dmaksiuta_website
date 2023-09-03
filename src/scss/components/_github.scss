@@ -1,6 +1,10 @@
 .github {
 	padding-top: 120px;
 	padding-bottom: 90px;
+	@include mobile {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 
 	&__title {
 		font: var(--font-h2);
@@ -34,6 +38,9 @@
 		}
 
 		margin-top: 100px;
+		@include mobile {
+			margin-top: 30px;
+		}
 
 		img {
 			width: 100%;

@@ -54,6 +54,9 @@
 	&__info {
 		padding: 40px 32px;
 		background: var(--c-level1);
+		@include mobile {
+			padding: 30px 20px;
+		}
 	}
 
 	&__title {

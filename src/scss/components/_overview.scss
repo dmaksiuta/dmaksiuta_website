@@ -2,6 +2,11 @@
 	padding-top: 120px;
 	padding-bottom: 144px;
 
+	@include mobile {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
 	&__list {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -27,12 +32,15 @@
 	&__title {
 		font: var(--font-h3);
 		color: var(--c-light-grey);
+
 		&._green {
 			color: var(--c-green);
 		}
+
 		&._sky {
 			color: var(--c-sky);
 		}
+
 		&._pink {
 			color: var(--c-pink);
 		}

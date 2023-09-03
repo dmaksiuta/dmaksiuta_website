@@ -5,9 +5,17 @@
 	align-items: center;
 	gap: 60px;
 	position: relative;
+
 	@include desktop-small {
 		flex-direction: column;
 	}
+
+	@include mobile {
+		padding-top: 90px;
+		gap: 36px;
+		padding-bottom: 70px;
+	}
+
 	&::before {
 		content: '';
 		display: block;
