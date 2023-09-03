@@ -1,0 +1,25 @@
+@import 'vendors/reset';
+
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/animations';
+
+@import 'layout/base';
+@import 'layout/scroll';
+
+
+@import 'ui/btn';
+
+@import 'components/common';
+
+@import 'components/header';
+@import 'components/welcome';
+@import 'components/overview';
+@import 'components/philosophy';
+@import 'components/skills';
+@import 'components/projects';
+@import 'components/about';
+@import 'components/github';
+@import 'components/contacts';
+@import 'components/footer';
+@import 'components/projects-all';

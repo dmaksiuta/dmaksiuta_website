@@ -1,0 +1,19 @@
+.small-title {
+	text-transform: uppercase;
+	font: var(--font-overline);
+	color: var(--c-light-grey);
+	margin-bottom: 41px;
+}
+.title {
+	font: var(--font-h2);
+	color: var(--c-text);
+	margin-bottom: 73px;
+	@include mobile {
+		margin-bottom: 36px;
+	}
+}
+
+
+a {
+	color: var(--c-text);
+}

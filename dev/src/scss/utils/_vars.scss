@@ -1,0 +1,53 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+:root {
+	// base
+	--ff: 'Sen', sans-serif;
+	--transition: .2s all ease-in-out;
+
+	--b-radius: 3px;
+
+	// colors
+	--c-primary: #5221E6;
+	--c-text: #fff;
+	--c-text-rgb: 255, 255, 255;
+	--c-base: #000;
+	--c-level1: #232323;
+	--c-light-grey: #8491A0;
+	--c-dark-grey: #5B6876;
+	--c-green: #3CC74E;
+	--c-pink: #E95D90;
+	--c-sky: #609BFF;
+	--c-peach: #FFF3E4;
+	--c-violet: #FBE4FF;
+	--c-cover: #020202;
+	--philosophy-bg: #100029;
+
+
+	// font
+
+	--font-label: 400 117rem/120% var(--ff);
+	--font-h1: 700 76rem/normal var(--ff);
+	--font-h2: 700 55rem/normal var(--ff);
+	--font-h3: 700 24rem/normal var(--ff);
+	--font-h4: 700 18rem/150% var(--ff);
+	--font-h5: 700 16rem/150% var(--ff);
+	--font-body1: 400 18rem/150% var(--ff);
+	--font-body2: 400 16rem/150% var(--ff);
+	--font-overline: 700 16rem/150% var(--ff);
+	--font-button: 700 18rem/150% var(--ff);
+
+
+	// old
+	--c-text-white: #fff;
+	--c-border: #eee;
+
+	@media screen and (max-width: 576px) {
+		--font-h1: 700 48rem/normal var(--ff);
+		--font-h2: 700 32rem/normal var(--ff);
+	}
+}

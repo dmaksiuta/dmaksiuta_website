@@ -1,0 +1,26 @@
+html {
+	font-size: 6.25%;
+	@include mobile {
+		font-size: 5%;
+	}
+}
+html, body {
+	height: 100%;
+	&._overflow-hidden {
+		overflow: hidden;
+	}
+}
+body {
+	font: var(--font-body2);
+	background-color: var(--c-base);
+	color: var(--c-text);
+}
+.container {
+	width: 100%;
+	max-width: calc(1300px + 40px);
+	padding: 0 20px;
+	margin-inline: auto;
+}
+.main {
+	padding: 20px;
+}
