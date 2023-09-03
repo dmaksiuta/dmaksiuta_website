@@ -1,5 +1,8 @@
 html, body {
 	height: 100%;
+	&._overflow-hidden {
+		overflow: hidden;
+	}
 }
 body {
 	font: var(--font-body2);

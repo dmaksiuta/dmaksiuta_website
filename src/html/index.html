@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
 
 <head>
 	<meta charset="UTF-8" />
@@ -28,8 +28,14 @@
 	@@include('components/github.html')
 	@@include('components/contacts.html')
 	@@include('components/footer.html')
+	@@include('components/projects-all.html')
 	<script src="./js/index.bundle.js"></script>
 	<script>
+		function allProjetsModalOpen() {
+			document.getElementById("projectsAll").classList.toggle("_open");
+			document.getElementById("html").classList.toggle("_overflow-hidden");
+			document.getElementsByTagName("body").classList.toggle("_overflow-hidden");
+		}
 		function navToggle() {
 			document.getElementById("headerUl").classList.toggle("_active");
 			document.getElementById("headerBackdrop").classList.toggle("_active");
