@@ -10,6 +10,12 @@
 	padding: 45px;
 	background: rgba(0, 0, 0, 0.6);
 	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+
+	@include mobile {
+		padding: 20px;
+	}
+
 
 
 	&._open {
@@ -25,6 +31,18 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 24px;
+
+		@include tablet-small {
+			padding: 0;
+		}
+
+		@include tablet {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include tablet-small {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	.material-icons {
@@ -33,6 +51,10 @@
 		left: 100%;
 		transform: translateX(50px);
 		cursor: pointer;
+
+		@include mobile {
+			transform: translateX(25px);
+		}
 	}
 
 	.projects-item {

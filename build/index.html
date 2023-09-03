@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="./css/main.css" />
 </head>
 
-<body>
+<body id="body">
 	<header id="header" class="header">
 	<div class="container header__container">
 		<a href="/" class="header__logo">
@@ -442,6 +442,7 @@
 		function allProjetsModalOpen() {
 			document.getElementById("projectsAll").classList.toggle("_open");
 			document.getElementById("html").classList.toggle("_overflow-hidden");
+			document.getElementById("body").classList.toggle("_overflow-hidden");
 		}
 		function navToggle() {
 			document.getElementById("headerUl").classList.toggle("_active");

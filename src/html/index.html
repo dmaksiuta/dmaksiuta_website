@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="./css/main.css" />
 </head>
 
-<body>
+<body id="body">
 	@@include('components/header.html')
 	@@include('components/welcome.html')
 	@@include('components/overview.html')
@@ -34,6 +34,7 @@
 		function allProjetsModalOpen() {
 			document.getElementById("projectsAll").classList.toggle("_open");
 			document.getElementById("html").classList.toggle("_overflow-hidden");
+			document.getElementById("body").classList.toggle("_overflow-hidden");
 		}
 		function navToggle() {
 			document.getElementById("headerUl").classList.toggle("_active");
