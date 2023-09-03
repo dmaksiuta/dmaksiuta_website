@@ -34,6 +34,8 @@
 			document.getElementById("headerUl").classList.toggle("_active");
 			document.getElementById("headerBackdrop").classList.toggle("_active");
 		}
+		// current year for footer copyright
+		document.getElementById("year").innerHTML = new Date().getFullYear() || 2023;
 
 		// scroll to section => nav link active
 		function InitializeLink() {

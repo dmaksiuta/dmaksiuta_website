@@ -59,17 +59,17 @@
 		<div class="overview-item">
 			<div class="overview-item__count">100+</div>
 			<h4 class="overview-item__title _green">Completed projects</h4>
-			<p class="overview-item__desc">I currently am the lead designer on the interaction design team for Google Play.</p>
+			<p class="overview-item__desc"> With a track record of successfully delivering numerous projects, I bring a proven ability to turn ideas into tangible results, ensuring your project is in capable hands.</p>
 		</div>
 		<div class="overview-item">
 			<div class="overview-item__count">65+</div>
 			<h4 class="overview-item__title _sky">Students has growed</h4>
-			<p class="overview-item__desc">I’ve worked on a wide variety of internal tools for facebook over the past 6 years.</p>
+			<p class="overview-item__desc">Through my passion for IT education, I've nurtured the growth of countless students, fostering their technical skills and preparing them for success in the ever-evolving world of information technology.</p>
 		</div>
 		<div class="overview-item">
 			<div class="overview-item__count">5+</div>
 			<h4 class="overview-item__title _pink">Years of experience</h4>
-			<p class="overview-item__desc">I started my design career with Dribbble. I was incharge of creating illustrations for the platform.</p>
+			<p class="overview-item__desc">With years of hands-on experience in my field, I offer a wealth of knowledge and expertise that translates into effective solutions and strategies tailored to your unique needs.</p>
 		</div>
 	</div>
 </section>
@@ -90,21 +90,21 @@
 	<div class="skills__row">
 		<div class="skills-overview">
 			<h4 class="skills-overview__title">Skillset</h4>
-			<p class="skills-overview__desc">With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
-		</div>
-		<div class="skills-item">
-			<div class="skills-item__icon">
-				<img src="./img/icons/teach.svg" alt="teach">
-			</div>
-			<h4 class="skills-item__title">Teaching HTML/CSS/JS</h4>
-			<p class="skills-item__desc">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
+			<p class="skills-overview__desc">With skills in different fields of development, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
 		</div>
 		<div class="skills-item">
 			<div class="skills-item__icon">
 				<img src="./img/icons/code.svg" alt="code">
 			</div>
 			<h4 class="skills-item__title">Building web and mobile apps</h4>
-			<p class="skills-item__desc">My experience at dribbble has helped me learn to develop the eye for design. Colors, typography, layout and the whole package.</p>
+			<p class="skills-item__desc">Leveraging my development prowess, I create dynamic and user-friendly web and mobile applications. From concept to deployment, I deliver tailored solutions that drive your digital ambitions forward.</p>
+		</div>
+		<div class="skills-item">
+			<div class="skills-item__icon">
+				<img src="./img/icons/teach.svg" alt="teach">
+			</div>
+			<h4 class="skills-item__title">Teaching HTML/CSS/JS</h4>
+			<p class="skills-item__desc">Sharing my expertise in HTML, CSS, and JavaScript, I empower learners to craft engaging and interactive web experiences. With my guidance, students unlock the potential of these foundational web technologies.</p>
 		</div>
 	</div>
 	<div class="skills-list">
@@ -221,7 +221,7 @@
 			</div>
 		</div>
 		<div class="footer__copy">
-			<p>Copyright © 2023 All rights reserved by</p>
+			<p>Copyright © <span id="year"></span> All rights reserved by</p>
 			<h4>Dmytro Maksiuta</h4>
 		</div>
 	</div>
@@ -233,6 +233,8 @@
 			document.getElementById("headerUl").classList.toggle("_active");
 			document.getElementById("headerBackdrop").classList.toggle("_active");
 		}
+		// current year for footer copyright
+		document.getElementById("year").innerHTML = new Date().getFullYear() || 2023;
 
 		// scroll to section => nav link active
 		function InitializeLink() {
