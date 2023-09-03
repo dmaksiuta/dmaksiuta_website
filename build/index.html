@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dmytro Maksiuta</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+	<header id="header" class="header">
+	<div class="container header__container">
+		<a href="/" class="header__logo">
+			<span>d</span>maksiuta
+		</a>
+		<div class="header__nav">
+			<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+			<ul class="header__ul" id="headerUl">
+				<li class="header__li"><a onclick="scrollToSection('welcome')" data-href="#welcome" class="header__a header__a-active" href="#welcome">Welcome</a></li>
+				<li class="header__li"><a onclick="scrollToSection('philosophy')" data-href="#philosophy" class="header__a" href="#philosophy">Vision</a></li>
+				<li class="header__li"><a onclick="scrollToSection('projects')" data-href="#projects" class="header__a" href="#projects">Projects</a></li>
+				<li class="header__li"><a onclick="scrollToSection('skills')" data-href="#skills" class="header__a" href="#skills">Skills</a></li>
+				<li class="header__li"><a onclick="scrollToSection('contacts')" data-href="#contacts" class="header__a _active" href="#contacts">Contacts</a></li>
+				<span class="material-icons icon-close" onclick="navToggle()">close</span>
+			</ul>
+			<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+		</div>
+	</div>
+</header>
+
+	<section id="welcome" class="welcome container">
+	<div class="welcome__img scale-up-center">
+		<img src="./img/dmaksiuta.jpg" alt="dmaksiuta">
+	</div>
+	<div class="welcome__info scale-up-center">
+		<h1 class="welcome__name">Dmytro Maksiuta</h1>
+		<p class="welcome__role">front-end developer.</p>
+		<p class="welcome__about">I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.</p>
+		<div class="welcome__btn">
+			<a href="./img/Maksiuta_Dmytro_CV.pdf" class="btn _primary" download>Download cv</a>
+		</div>
+	</div>
+</section>
+
+	<section id="overview" class="overview container">
+	<div class="small-title">overview</div>
+	<div class="title">Why me?</div>
+	<div class="overview__list">
+		<div class="overview-item">
+			<div class="overview-item__count">100+</div>
+			<h4 class="overview-item__title _green">Completed projects</h4>
+			<p class="overview-item__desc">I currently am the lead designer on the interaction design team for Google Play.</p>
+		</div>
+		<div class="overview-item">
+			<div class="overview-item__count">65+</div>
+			<h4 class="overview-item__title _sky">Students has growed</h4>
+			<p class="overview-item__desc">I’ve worked on a wide variety of internal tools for facebook over the past 6 years.</p>
+		</div>
+		<div class="overview-item">
+			<div class="overview-item__count">5+</div>
+			<h4 class="overview-item__title _pink">Years of experience</h4>
+			<p class="overview-item__desc">I started my design career with Dribbble. I was incharge of creating illustrations for the platform.</p>
+		</div>
+	</div>
+</section>
+
+	<section id="philosophy" class="philosophy">
+	<div class="container philosophy__container">
+		<div class="philosophy__info">
+			<h4 class="philosophy__title">Philosophy & values</h4>
+			<p class="philosophy__desc">I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.</p>
+		</div>
+		<div class="philosophy__img">
+			<img src="./img/philosophy.png" alt="philosophy">
+		</div>
+	</div>
+</section>
+
+	<section id="skills" class="skills container">
+	<div class="skills__row">
+		<div class="skills-overview">
+			<h4 class="skills-overview__title">Skillset</h4>
+			<p class="skills-overview__desc">With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
+		</div>
+		<div class="skills-item">
+			<div class="skills-item__icon">
+				<img src="./img/icons/teach.svg" alt="teach">
+			</div>
+			<h4 class="skills-item__title">Teaching HTML/CSS/JS</h4>
+			<p class="skills-item__desc">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
+		</div>
+		<div class="skills-item">
+			<div class="skills-item__icon">
+				<img src="./img/icons/code.svg" alt="code">
+			</div>
+			<h4 class="skills-item__title">Building web and mobile apps</h4>
+			<p class="skills-item__desc">My experience at dribbble has helped me learn to develop the eye for design. Colors, typography, layout and the whole package.</p>
+		</div>
+	</div>
+	<div class="skills-list">
+		<div class="skills-list__img"><img src="./img/skills/html.png" alt="html"></div>
+		<div class="skills-list__img"><img src="./img/skills/css.png" alt="css"></div>
+		<div class="skills-list__img"><img src="./img/skills/js.png" alt="js"></div>
+		<div class="skills-list__img"><img src="./img/skills/react.png" alt="react"></div>
+		<div class="skills-list__img"><img src="./img/skills/angular.png" alt="angular"></div>
+	</div>
+</section>
+
+	<section id="projects" class="projects container">
+	<div class="small-title">MY PROJECTS</div>
+	<div class="title">Work that I’ve done for the past 8 years</div>
+	<div class="projects__list">
+		<div class="projects-item">
+			<div class="projects-item__img"><img src="./img/projects/project1.png" alt="project1"></div>
+			<div class="projects-item__info">
+				<div class="projects-item__title">CoinView Mobile App Design</div>
+				<div class="projects-item__desc">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</div>
+			</div>
+		</div>
+		<div class="projects-item">
+			<div class="projects-item__img"><img src="./img/projects/project1.png" alt="project1"></div>
+			<div class="projects-item__info">
+				<div class="projects-item__title">CoinView Mobile App Design</div>
+				<div class="projects-item__desc">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</div>
+			</div>
+		</div>
+		<div class="projects-item">
+			<div class="projects-item__img"><img src="./img/projects/project1.png" alt="project1"></div>
+			<div class="projects-item__info">
+				<div class="projects-item__title">CoinView Mobile App Design</div>
+				<div class="projects-item__desc">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</div>
+			</div>
+		</div>
+		<div class="projects-item">
+			<div class="projects-item__img"><img src="./img/projects/project1.png" alt="project1"></div>
+			<div class="projects-item__info">
+				<div class="projects-item__title">CoinView Mobile App Design</div>
+				<div class="projects-item__desc">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</div>
+			</div>
+		</div>
+		<div class="projects__btn">
+			<a href="/" class="btn _primary">VIEW ALL PROJECTS</a>
+		</div>
+	</div>
+</section>
+
+	<section id="about" class="about container">
+	<h4 class="about__title">About me</h4>
+	<p class="about__desc">Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes and comments are appreciated.</p>
+	<a href="https://youtu.be/5XhxuWKyqlo" class="about__video">
+		<img src="./img/video.jpg" alt="dmaksiuta">
+		<span class="play-btn"></span>
+	</a>
+</section>
+
+	<section id="github" class="github container">
+	<h4 class="github__title">My Github</h4>
+	<p class="github__desc">Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes and comments are appreciated.</p>
+	<a href="/" class="github__link">Follow me on Dribbble</a>
+	<div class="github__img">
+		<img src="./img/github.jpg" alt="dmaksiuta">
+	</div>
+</section>
+
+	<section id="contacts" class="contacts container">
+	<div class="contacts__title">My Contact</div>
+	<div class="contacts__desc">Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes and coments are appreciated.</div>
+	<div class="contacts-item">
+		<div class="contacts-item__title">UpWork</div>
+		<a href="/" class="contacts-item__link">Dmytro Maksiuta</a>
+	</div>
+	<div class="contacts-item">
+		<div class="contacts-item__title">GitHub</div>
+		<a href="/" class="contacts-item__link">dmaksiuta</a>
+	</div>
+	<div class="contacts-item">
+		<div class="contacts-item__title">Email</div>
+		<a href="/" class="contacts-item__link">lord1kdev@gmail.com</a>
+	</div>
+	<div class="contacts-item">
+		<div class="contacts-item__title">Linked In</div>
+		<a href="/" class="contacts-item__link">Dmytro Maksiuta</a>
+	</div>
+</section>
+
+	<footer class="footer">
+	<div class="container footer__container">
+		<div class="footer__info">
+			<a href="#welcome" class="footer__logo">
+				<span>d</span>maksiuta
+			</a>
+			<div class="footer__nav">
+				<ul class="footer__ul">
+					<li class="footer__li"><a class="footer__a" href="/">Experience</a></li>
+					<li class="footer__li"><a class="footer__a" href="/">Work</a></li>
+					<li class="footer__li"><a class="footer__a" href="/">Photography</a></li>
+					<li class="footer__li"><a class="footer__a _active" href="/">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__copy">
+			<p>Copyright © 2023 All rights reserved by</p>
+			<h4>Dmytro Maksiuta</h4>
+		</div>
+	</div>
+</footer>
+
+	<script src="./js/index.bundle.js"></script>
+	<script>
+		function navToggle() {
+			document.getElementById("headerUl").classList.toggle("_active");
+			document.getElementById("headerBackdrop").classList.toggle("_active");
+		}
+
+		// scroll to section => nav link active
+		function InitializeLink() {
+			var section = document.getElementsByTagName("section");
+			var sections = {};
+			var i = 0;
+			Array.prototype.forEach.call(section, function (e) {
+				sections[e.id] = e.offsetTop;
+			});
+			window.onscroll = function () {
+				var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+				// for (i in sections) {
+				// 	if (sections[i] <= scrollPosition) {
+				// 		document.querySelector('.header__a-active').setAttribute('class', '');
+				// 		document.querySelector('a[data-href*=' + i + ']').setAttribute('class', 'header__a-active');
+				// 	}
+				// }
+			};
+		};
+		window.onresize = () => {
+			InitializeLink()
+		}
+		InitializeLink()
+
+	</script>
+</body>
+
+</html>

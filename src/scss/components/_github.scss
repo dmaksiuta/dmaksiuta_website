@@ -1,0 +1,42 @@
+.github {
+	padding-top: 120px;
+	padding-bottom: 90px;
+
+	&__title {
+		font: var(--font-h2);
+		color: var(--c-text);
+		margin-bottom: 24px;
+	}
+
+	&__desc {
+		font: var(--font-body1);
+		color: var(--c-light-grey);
+		margin-bottom: 40px;
+	}
+
+	&__link {
+		font: var(--font-body2);
+		color: var(--c-text);
+		text-decoration: underline;
+	}
+
+	&__img {
+
+		&:hover {
+			img {
+				filter: brightness(1);
+			}
+		}
+
+		img {
+			transition: var(--transition);
+			filter: brightness(0.7);
+		}
+
+		margin-top: 100px;
+
+		img {
+			width: 100%;
+		}
+	}
+}

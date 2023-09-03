@@ -1,0 +1,13 @@
+// ===== SCROLL CUSTOMIZE =====
+*::-webkit-scrollbar {
+	width: 7px;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+* ::-webkit-scrollbar-thumb {
+	background-color: var(--c-primary);
+}
+
+* {
+	scroll-behavior: smooth;
+}

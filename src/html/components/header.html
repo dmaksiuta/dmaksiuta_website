@@ -1,0 +1,19 @@
+<header id="header" class="header">
+	<div class="container header__container">
+		<a href="/" class="header__logo">
+			<span>d</span>maksiuta
+		</a>
+		<div class="header__nav">
+			<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+			<ul class="header__ul" id="headerUl">
+				<li class="header__li"><a onclick="scrollToSection('welcome')" data-href="#welcome" class="header__a header__a-active" href="#welcome">Welcome</a></li>
+				<li class="header__li"><a onclick="scrollToSection('philosophy')" data-href="#philosophy" class="header__a" href="#philosophy">Vision</a></li>
+				<li class="header__li"><a onclick="scrollToSection('projects')" data-href="#projects" class="header__a" href="#projects">Projects</a></li>
+				<li class="header__li"><a onclick="scrollToSection('skills')" data-href="#skills" class="header__a" href="#skills">Skills</a></li>
+				<li class="header__li"><a onclick="scrollToSection('contacts')" data-href="#contacts" class="header__a _active" href="#contacts">Contacts</a></li>
+				<span class="material-icons icon-close" onclick="navToggle()">close</span>
+			</ul>
+			<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+		</div>
+	</div>
+</header>
