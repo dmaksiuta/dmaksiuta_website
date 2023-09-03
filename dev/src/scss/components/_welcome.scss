@@ -17,7 +17,7 @@
 	}
 
 	&::before {
-		content: '';
+		content: "";
 		display: block;
 		max-width: 900px;
 		max-height: 900px;
@@ -32,8 +32,10 @@
 
 	&__img {
 		max-width: 550px;
+		perspective: 10000;
 
 		img {
+			perspective: 10000;
 			border-radius: 3px;
 			box-shadow: -48px 0px 156px 0px #100029;
 		}
